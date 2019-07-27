@@ -1,0 +1,170 @@
+<app-user-menu-bar></app-user-menu-bar>
+
+<!-- <section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
+  <div class="carousel-reviews broun-block">
+     <div class="container">
+        <div class="row">
+        
+         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+             <div class="body-center">
+                <div class="panel panel-skin">
+                <div class="panel-heading">
+                <h3 class="panel-title"><span class="fa fa-hospital-o"></span> Hospital List</h3>
+                </div>
+           
+
+
+
+          
+           
+<div class="panel-body">
+        <div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+         
+    <div class="row">
+            <div *ngFor="let Hospital of HospitalList">   
+                
+
+                <div class="col-md-12">
+                <div class="col-md-4"><img src="{{Hospital.image}}" height="200" width="200">
+                </div>
+
+
+                <div class="col-md-6">
+                    <table class="table table-striped abc">
+                        <h6>
+                        <tr>
+                                <td >Name :- {{Hospital.hospitalname}}</td> 
+                                <td >Type :- {{Hospital.type}} </td>
+                        </tr>
+                        
+                        <tr>
+                                <td>From :-{{Hospital.timimg_from}}</td> 
+                                <td>To :-{{Hospital.timing_to}}</td>
+                        </tr>
+                        <br>
+                        <tr style="margin:10px;">
+                                <td class="mr-4">Address :-{{Hospital.address}} </td> 
+                                <td>Details :-{{Hospital.details}}</td>
+                        </tr>
+                        </h6>
+                    </table>
+                </div>
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>  
+
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+
+
+</section> -->
+
+
+
+
+<section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
+    <div class="carousel-reviews broun-block">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+         <div class="body-center">
+         <div class="panel panel-skin">
+         <div class="panel-heading">
+        <h3 class="panel-title"><span class="fa fa-th-list"></span> Hospital List</h3>
+        </div>
+        <div class="panel-body">
+        <div class="section-heading text-center">
+        <h5 class="h-bold">Hospital List</h5>
+    </div>
+        <!-- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> -->
+
+
+                <div class="accordion-inner">
+                        <div class="row">
+                            <div class="col-lg-12">
+                        <table class="table table-bordered table-dark abc" >
+                            <tbody *ngFor="let HIN of Hospitalinfos">
+                        <tr> 
+                        <td colspan="5" rowspan="5">
+                        <div class="span5">
+                        
+                        <div>
+                    
+                                <img src="{{HIN.image}}" Height="250px" Width="250px">
+                       
+                       </div>
+                        </div>
+                        </td>
+                
+                        <td>
+                        
+                        <tr width="150px" height="50px">
+                        <td width="150px" height="50px">
+                        Name -: {{HIN.hospitalname}}
+                        </td>
+                        <td>
+                        Type -: {{HIN.type}}
+                        </td>
+                       
+                        
+                        </tr>                              
+                      
+                
+                      <tr width="150px" height="50px">
+                        <td width="150px" height="50px" > 
+                        Timming From -: {{HIN.timimg_from}}
+                        </td>
+                        <td>
+                        Timing To -: {{HIN.timing_to}}
+                        </td>
+                        </tr>
+                
+                        <tr width="250px" height="50px">
+                        <td width="350px" height="150px">
+                         Address -: {{HIN.address}}
+                        </td>
+                        <td>Details -: {{HIN.details}}</td>
+                        </tr>
+                        </td>
+                       <!-- <td>
+                           <input type="button" value="Disable" class="btn btn-danger" (click)="fDisable(HIN.hospitalID)">
+                       </td> -->
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                </div>
+                </div>
+    
+
+
+    
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+        </div>
+        <!-- </div> -->
+       </div>
+        </div>
+        </div>
+     </div>
+    </section>
