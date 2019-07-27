@@ -1,0 +1,4 @@
+
+ 
+.has-error {border-color: red ;box-shadow: none; -webkit-box-shadow: none;}
+.has-noerror {border-color:green ;box-shadow: none; -webkit-box-shadow: none;}

@@ -1,0 +1,80 @@
+
+
+
+<app-menu-bar></app-menu-bar>
+
+
+<section id="testimonial" class="home-section paddingbot-60 parallax" data-stellar-background-ratio="0.5">
+
+        <div class="carousel-reviews broun-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+					
+                            <img src="assets/img/vaccination_Details.png" alt="" height="600px" width="500px">
+
+					</div>
+					<div class="col-lg-6">
+						<div class="form-wrapper">
+						<div class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s">
+						
+							<div class="panel panel-skin">
+							<div class="panel-heading">
+									<h3 class="panel-title"><span class="fa fa-pencil-square-o"></span>Know about your Vaccination !</h3>
+									</div>
+									<div class="panel-body">
+									    <div id="sendmessage"></div>
+                                        <div id="errormessage"></div>
+                                   
+    					                
+    										<div class="row">
+    											<div class="col-xs-10 col-sm-10 col-md-10">
+    												
+    													<label>Select Age Group</label>
+    													 <select class="form-control input-md"  [value]="agegroup" (change)="onChangeVaccine($event.target.value)" > 
+																<option *ngFor="let V of VaccineInfos" [value]="V.vaccineId" >{{V.ageGroup}}</option>
+														</select>
+														
+                                                                
+                                                        <div class="validation"></div>
+    											
+    											</div>
+    											
+    										</div>
+
+    										<div class="row">
+    											<div class="col-xs-10 col-sm-10 col-md-10">
+    												<div class="form-group">
+    													<label>Vaccination Details:</label>
+    													{{VaccineDetails}}
+    												</div>
+    											</div>
+    											
+    										</div>
+											
+											
+											<div class="row">
+    											<div class="col-xs-10 col-sm-10 col-md-10">
+    												<div class="form-group">
+    													<label>Vaccination Name:</label>
+    													{{VaccineName}}
+                                                        
+    												</div>
+    											</div>
+    											
+    										</div>
+											
+											
+											
+    									
+								</div>
+							</div>				
+						
+						</div>
+						</div>
+					</div>					
+				</div>		
+			</div>
+		</div>		
+    </section>
+
